@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import heroSection from '@/sections/heroSection.vue'
 
+import indexPage from '../views/indexPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: heroSection,
+      component: indexPage ,
     }
   ],
 })

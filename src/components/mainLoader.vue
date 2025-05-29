@@ -1,37 +1,82 @@
 <script setup lang="ts">
+
     import {motion} from "motion-v"
-    
+    import { ref } from "vue";
+
+    const props = defineProps(["color"])
+    const percentage = ref(0)
+    const buildUp = setInterval(()=>{
+        if (percentage.value == 100)
+            clearInterval(buildUp)
+        else
+            percentage.value++
+    }, (10))
+
+
+    const loaderStyle = {
+        backgroundColor: props.color || "#0A0A0A"
+    }
+
+    const animationProps = ref({
+        opacity: 1,
+        height : '100dvh',
+        transition : { duration : 1.5,  ease: [1,.12,.48,1]}
+    })
+
+    const backgroundVisibility = ref('visible')
+
+
+    setTimeout(()=>{
+        console.log(animationProps.value)
+
+        animationProps.value = {
+            ...animationProps.value,
+            opacity: 0,
+            transition: { duration : 1,  ease: [1,.12,.48,1]}
+        }
+
+        backgroundVisibility.value = "invisible"
+    }, 1500)
 </script>
 
 <template>
-    <motion.div :initial="{
-        scaleY : 0
-    }"
-    :animate="{
-        scaleY : 1,
-        transition : { duration : 1.5,  easing: [0.94,0,0.04,1]} 
-    }"
+    <motion.div class="loaderBackground" :class="backgroundVisibility" ></motion.div>
+    <motion.div :initial="{  height : '0dvh' }"
+    :animate="animationProps"
+    :style="loaderStyle"
     class="loader">
-        <motion.p class="counter">100%</motion.p>
-
+        <motion.h4 class="counter">{{percentage}}%</motion.h4>
     </motion.div>
 
 </template>
 
 <style scoped>
+
     .loader {
         height: 100dvh;
         width: 100dvw;
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: #0A0A0A;
     }
 
     .counter {
         position: absolute;
         bottom: 100%;
         left: 0;
-        font-size: 5rem
+        font-size: 5rem;
+        font-weight: 400;
+    }
+
+    .loaderBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #eaeef5;
+    }
+    .invisible {
+        opacity: 0;
     }
 </style>
