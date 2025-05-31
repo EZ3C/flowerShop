@@ -23,7 +23,7 @@
         transition : { duration : 1.5,  ease: [1,.12,.48,1]}
     })
 
-    const backgroundVisibility = ref('visible')
+    const visibility = ref('visible')
 
 
     setTimeout(()=>{
@@ -35,13 +35,13 @@
             transition: { duration : 1,  ease: [1,.12,.48,1]}
         }
 
-        backgroundVisibility.value = "invisible"
+        visibility.value = "invisible"
     }, 1500)
 </script>
 
 <template>
-    <motion.div class="loaderBackground" :class="backgroundVisibility" ></motion.div>
-    <motion.div :initial="{  height : '0dvh' }"
+    <motion.div class="loaderBackground" :class="visibility" ></motion.div>
+    <motion.div :class="visibility" :initial="{  height : '0dvh' }"
     :animate="animationProps"
     :style="loaderStyle"
     class="loader">
@@ -55,9 +55,10 @@
     .loader {
         height: 100dvh;
         width: 100dvw;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
+        
     }
 
     .counter {
@@ -66,10 +67,11 @@
         left: 0;
         font-size: 5rem;
         font-weight: 400;
+        z-index: 100;
     }
 
     .loaderBackground {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         height: 100%;
@@ -78,5 +80,6 @@
     }
     .invisible {
         opacity: 0;
+        pointer-events: none;
     }
 </style>

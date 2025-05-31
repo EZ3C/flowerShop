@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Snake Plant",
+    "img": "/src/assets/plants/snake_plant.webp",
+    "categories": ["air purifier", "low light", "easy care"]
+  },
+  {
+    "id": "2",
+    "title": "Peace Lily",
+    "img": "/src/assets/plants/peace_lily.webp",
+    "categories": ["air purifier", "flowering", "low light"]
+  },
+  {
+    "id": "3",
+    "title": "Spider Plant",
+    "img": "/src/assets/plants/spider_plant.webp",
+    "categories": ["air purifier", "easy care"]
+  },
+  {
+    "id": "4",
+    "title": "Pothos",
+    "img": "/src/assets/plants/pothos.webp",
+    "categories": ["low light", "easy care", "air purifier"]
+  },
+  {
+    "id": "5",
+    "title": "ZZ Plant",
+    "img": "/src/assets/plants/zz_plant.webp",
+    "categories": ["low light", "easy care"]
+  },
+  {
+    "id": "6",
+    "title": "Aloe Vera",
+    "img": "/src/assets/plants/aloe_vera.webp",
+    "categories": ["air purifier", "easy care"]
+  },
+  {
+    "id": "7",
+    "title": "Chinese Evergreen",
+    "img": "/src/assets/plants/chinese_evergreen.webp",
+    "categories": ["low light", "air purifier"]
+  },
+  {
+    "id": "8",
+    "title": "Dieffenbachia",
+    "img": "/src/assets/plants/dieffenbachia.webp",
+    "categories": ["low light", "flowering"]
+  },
+  {
+    "id": "9",
+    "title": "Bamboo Palm",
+    "img": "/src/assets/plants/bamboo_palm.webp",
+    "categories": ["air purifier", "easy care"]
+  },
+  {
+    "id": "10",
+    "title": "Calathea",
+    "img": "/src/assets/plants/calathea.webp",
+    "categories": ["flowering", "low light"]
+  },
+  {
+    "id": "11",
+    "title": "Anthurium",
+    "img": "/src/assets/plants/anthurium.webp",
+    "categories": ["flowering", "air purifier"]
+  },
+  {
+    "id": "12",
+    "title": "Boston Fern",
+    "img": "/src/assets/plants/boston_fern.webp",
+    "categories": ["air purifier", "low light"]
+  },
+  {
+    "id": "13",
+    "title": "Dracaena",
+    "img": "/src/assets/plants/dracaena.webp",
+    "categories": ["air purifier", "easy care"]
+  },
+  {
+    "id": "14",
+    "title": "Orchid",
+    "img": "/src/assets/plants/orchid.webp",
+    "categories": ["flowering"]
+  },
+  {
+    "id": "15",
+    "title": "Cast Iron Plant",
+    "img": "/src/assets/plants/cast_iron_plant.webp",
+    "categories": ["low light", "easy care"]
+  }
+]

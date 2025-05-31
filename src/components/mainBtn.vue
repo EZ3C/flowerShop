@@ -13,36 +13,32 @@ if (props?.animate?.transition?.delay){
 </script>
 
 <template>
-    <div class="btnContainer merriweather-sans">
-        <motion.div
-        :initial="props.initial"
-        :animate="animateProps"
-        :while-hover="{
-            scale:1.2
-        }"
+
+    <motion.div
+    :initial="props.initial"
+    :animate="animateProps"
+    :while-hover="{
+        scale:1.2
+    }"
 
 
-        :while-press="{
-            scale: .9
-        }"
-        class="btn">
-            <slot></slot>
-        </motion.div>
-    </div>
+    :while-press="{
+        scale: .9
+    }"
+    class="btn">
+        <slot></slot>
+    </motion.div>
+
 </template>
 
 <style scoped>
 
-    .btnContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .btn{
         padding: 1rem;
         cursor: pointer;
         background-color: white;
-        color: #0a0a0a;
+        color: #1A1A1A;
         border-radius: 5px;
     }
 </style>
