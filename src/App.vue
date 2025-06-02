@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+
+import { Motion } from 'motion-v';
+import { RouterView } from 'vue-router'
 </script>
 <template>
 
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+      <component :is="Component" />
+  </RouterView>
 </template>
 
 <style scoped>

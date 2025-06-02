@@ -4,8 +4,11 @@ import { motion } from 'motion-v';
 const {product} = defineProps(['product'])
 </script>
 
+
+
 <template>
-  <motion.div :initial="{
+  <motion.div
+    :initial="{
     opacity : 0
   }" 
   :while-in-view="{
@@ -15,7 +18,8 @@ const {product} = defineProps(['product'])
   }">
     <div class="productImgContainer">
         <div class="imgContainer">
-            <img :src="product.img"  alt="">
+            <motion.img
+                 :layout-id="`product-image-${product.id}`" :src="product.img"  alt="" />
         </div>
         <p class="productTitle">{{ product.title }}</p>
     </div>

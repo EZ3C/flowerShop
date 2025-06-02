@@ -2,6 +2,8 @@
 import { ref, computed } from 'vue'
 import products from "../data/products.json"
 import plantProduct from "./plantProduct.vue"
+import { RouterLink } from 'vue-router';
+import router from '../router/index';
 // const x2 = ref(0)
 const curr = ref("all")
 const categories = [...new Set(products.flatMap(product => product.categories))];
@@ -19,6 +21,25 @@ const filteredPlants = computed(()=>{
         prod.categories.includes(curr?.value)
       )
 })
+
+
+function handleProductClick (route, event){
+  // Get the clicked element's position
+  const element = event.currentTarget;
+  
+  // Scroll to bring the element to a consistent position (like top of viewport)
+  element.scrollIntoView({ 
+    behavior: 'smooth', 
+    block: 'start' 
+  });
+  
+  // Delay navigation until scroll completes
+//   setTimeout(() => {
+    router.push(route);
+//   }, 300);
+};
+
+
 </script>
 
 
@@ -29,8 +50,10 @@ const filteredPlants = computed(()=>{
         <span  class="category" @click="handleClick( category)" v-for="category in categories" :key="category" :class="{ current: curr === category }">{{ category }}</span>
     </div>
     <div class="products">
-        <div class="productContainer" v-for="product in filteredPlants" :key="product.id">
-            <plantProduct :product="product"></plantProduct>
+        <div class="productContainer"  v-for="product in filteredPlants" :key="product.id">
+            <!-- <RouterLink :to="{ name: 'product', params: { id: product.id } }"> -->
+                <plantProduct @click="handleProductClick(`/product/${product.id}`, $event)" :product="product"></plantProduct>
+            <!-- </RouterLink> -->
         </div>
     </div>
   </div>

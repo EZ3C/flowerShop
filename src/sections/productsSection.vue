@@ -19,6 +19,7 @@ import ProductFilter from '@/components/productFilter.vue';
     .productSection{
         width: 100vw;
         padding: 4rem;
+        position: relative;
     }
 
     h2{

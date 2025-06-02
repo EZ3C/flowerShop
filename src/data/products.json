@@ -3,90 +3,120 @@
     "id": "1",
     "title": "Snake Plant",
     "img": "/src/assets/plants/snake_plant.webp",
-    "categories": ["air purifier", "low light", "easy care"]
+    "categories": ["air purifier", "low light", "easy care"],
+    "description": "A resilient plant perfect for beginners, known for its striking upright leaves and air-purifying abilities.",
+    "price": 18.99
   },
   {
     "id": "2",
     "title": "Peace Lily",
     "img": "/src/assets/plants/peace_lily.webp",
-    "categories": ["air purifier", "flowering", "low light"]
+    "categories": ["air purifier", "flowering", "low light"],
+    "description": "Elegant and serene, this flowering plant thrives in shade and improves indoor air quality.",
+    "price": 22.50
   },
   {
     "id": "3",
     "title": "Spider Plant",
     "img": "/src/assets/plants/spider_plant.webp",
-    "categories": ["air purifier", "easy care"]
+    "categories": ["air purifier", "easy care"],
+    "description": "A classic favorite that sprouts baby 'spiders' and helps purify the air.",
+    "price": 14.75
   },
   {
     "id": "4",
     "title": "Pothos",
     "img": "/src/assets/plants/pothos.webp",
-    "categories": ["low light", "easy care", "air purifier"]
+    "categories": ["low light", "easy care", "air purifier"],
+    "description": "A fast-growing vine with heart-shaped leaves, perfect for hanging baskets or shelves.",
+    "price": 16.99
   },
   {
     "id": "5",
     "title": "ZZ Plant",
     "img": "/src/assets/plants/zz_plant.webp",
-    "categories": ["low light", "easy care"]
+    "categories": ["low light", "easy care"],
+    "description": "Glossy, drought-tolerant leaves make this plant nearly indestructible and very stylish.",
+    "price": 21.00
   },
   {
     "id": "6",
     "title": "Aloe Vera",
     "img": "/src/assets/plants/aloe_vera.webp",
-    "categories": ["air purifier", "easy care"]
+    "categories": ["air purifier", "easy care"],
+    "description": "Succulent plant with healing properties, ideal for sunny windowsills.",
+    "price": 13.50
   },
   {
     "id": "7",
     "title": "Chinese Evergreen",
     "img": "/src/assets/plants/chinese_evergreen.webp",
-    "categories": ["low light", "air purifier"]
+    "categories": ["low light", "air purifier"],
+    "description": "A striking foliage plant that tolerates poor lighting and adds color to any room.",
+    "price": 19.25
   },
   {
     "id": "8",
     "title": "Dieffenbachia",
     "img": "/src/assets/plants/dieffenbachia.webp",
-    "categories": ["low light", "flowering"]
+    "categories": ["low light", "flowering"],
+    "description": "Lush and tropical with large leaves, ideal for shaded corners and low light environments.",
+    "price": 17.80
   },
   {
     "id": "9",
     "title": "Bamboo Palm",
     "img": "/src/assets/plants/bamboo_palm.webp",
-    "categories": ["air purifier", "easy care"]
+    "categories": ["air purifier", "easy care"],
+    "description": "Tropical charm and air-cleaning benefits in a low-maintenance palm.",
+    "price": 24.00
   },
   {
     "id": "10",
     "title": "Calathea",
     "img": "/src/assets/plants/calathea.webp",
-    "categories": ["flowering", "low light"]
+    "categories": ["flowering", "low light"],
+    "description": "Known for its vibrant patterned leaves and movement throughout the day.",
+    "price": 23.99
   },
   {
     "id": "11",
     "title": "Anthurium",
     "img": "/src/assets/plants/anthurium.webp",
-    "categories": ["flowering", "air purifier"]
+    "categories": ["flowering", "air purifier"],
+    "description": "Bright waxy flowers and heart-shaped leaves make this plant a standout.",
+    "price": 26.50
   },
   {
     "id": "12",
     "title": "Boston Fern",
     "img": "/src/assets/plants/boston_fern.webp",
-    "categories": ["air purifier", "low light"]
+    "categories": ["air purifier", "low light"],
+    "description": "Lush, feathery fronds create a classic and refreshing indoor look.",
+    "price": 15.60
   },
   {
     "id": "13",
     "title": "Dracaena",
     "img": "/src/assets/plants/dracaena.webp",
-    "categories": ["air purifier", "easy care"]
+    "categories": ["air purifier", "easy care"],
+    "description": "An elegant upright plant with long striped leaves, great for homes and offices.",
+    "price": 20.95
   },
   {
     "id": "14",
     "title": "Orchid",
     "img": "/src/assets/plants/orchid.webp",
-    "categories": ["flowering"]
+    "categories": ["flowering"],
+    "description": "Delicate and exotic blooms that last for weeks with minimal care.",
+    "price": 27.30
   },
   {
     "id": "15",
     "title": "Cast Iron Plant",
     "img": "/src/assets/plants/cast_iron_plant.webp",
-    "categories": ["low light", "easy care"]
+    "categories": ["low light", "easy care"],
+    "description": "True to its name, it’s incredibly tough and survives with very little attention.",
+    "price": 18.25
   }
 ]
