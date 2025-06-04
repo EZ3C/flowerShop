@@ -54,7 +54,7 @@
 
     .loader {
         height: 100dvh;
-        width: 100dvw;
+        width: 100%;
         position: fixed;
         bottom: 0;
         left: 0;

@@ -61,10 +61,11 @@ console.log(product)
     .product-detail{
         position : relative;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         padding: 2rem 10rem;
         gap: 3rem;
     }
@@ -75,9 +76,12 @@ console.log(product)
       overflow: hidden;
     }
 
+
+
     .imgContainer img {
       height: 100%;
       width: 100%;
+      object-fit: cover;
       filter: brightness(.8);
     }
 
@@ -87,10 +91,62 @@ console.log(product)
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      flex-wrap: wrap;
       gap: .5rem
     }
 
     .productInfo p {
       color: grey;
+    }
+
+
+
+    @media (max-width: 1460px){
+      .imgContainer {
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .product-detail{
+        padding: 0 2rem;
+        justify-content: flex-start;
+      }
+
+      .productInfo{
+        width: 100%;
+      }
+
+      .productCounter{
+        flex-wrap: wrap-reverse;
+      }
+
+      .imgContainer {
+        align-self: flex-end;
+      }
+
+      .productInfo {
+        align-self: flex-start;
+      }
+    }
+
+
+    @media (max-width: 450px){
+      .imgContainer {
+        height: 20rem;
+
+      }
+      .product-detail{
+        padding: 0 .5rem;
+        justify-content: flex-start;
+      }
+
+/*    
+      .productInfo{
+        width: 100%;
+      }
+      
+      .productCounter{
+        flex-wrap: wrap;
+      } */
     }
 </style>

@@ -23,12 +23,12 @@ const filteredPlants = computed(()=>{
 })
 
 
-function handleProductClick (route, event){
+function handleProductClick (route : string, event: Event){
   // Get the clicked element's position
-  const element = event.currentTarget;
+  const element = event.currentTarget as Element;
   
   // Scroll to bring the element to a consistent position (like top of viewport)
-  element.scrollIntoView({ 
+  element?.scrollIntoView({ 
     behavior: 'smooth', 
     block: 'start' 
   });
@@ -80,7 +80,7 @@ function handleProductClick (route, event){
         color: #791fd9;
     }
     .filter > .current:first-of-type:after{
-        background-color: blue;
+        
         left: 0%;
         transform:translate(0%, 0%) scaleX(1);
     }
@@ -99,9 +99,10 @@ function handleProductClick (route, event){
     .products {
         display: grid;
         margin-top: 2rem;
-        gap: 1px;
-        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
+
+
+
 
 
     .products > div {
@@ -109,8 +110,26 @@ function handleProductClick (route, event){
     }
 
     .productContainer{
-        padding: 2rem;
+        padding: 2rem 0;
         place-items: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    @media (min-width : 750px) {
+        .products {
+            gap: 1px;
+            grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        }
+
+        .productContainer{
+            width: 100%;
+        }
+
+
     }
 
 

@@ -5,7 +5,11 @@
 
 <template>
     <div class="videoContainer">
-        <video src="../assets/flowers.mp4" autoplay muted></video>
+        <video src="../assets/flowers.mp4"  muted 
+  loop 
+  autoplay 
+  playsinline 
+  preload="auto"></video>
     </div>
 </template>
 
@@ -14,8 +18,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100dvw;
-        height: 100dvh;
+        width: 100%;
+        height: 100vh;
         z-index: -1;
     }
 

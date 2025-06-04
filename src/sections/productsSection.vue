@@ -7,7 +7,7 @@ import ProductFilter from '@/components/productFilter.vue';
 </script>
 
 <template>
-  <div class="productSection">
+  <div id="products" class="productSection">
     <h2>Find what you need</h2>
     <ProductFilter></ProductFilter>
   </div>
@@ -17,7 +17,7 @@ import ProductFilter from '@/components/productFilter.vue';
 
 <style scoped>
     .productSection{
-        width: 100vw;
+        width: 100%;
         padding: 4rem;
         position: relative;
     }
@@ -30,7 +30,7 @@ import ProductFilter from '@/components/productFilter.vue';
 
     @media (max-width: 480px){
         .productSection {
-            padding: 0rem 10px;
+            padding: 2rem 10px;
 
         }
     }

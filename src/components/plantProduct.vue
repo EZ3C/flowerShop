@@ -37,10 +37,11 @@ const {product} = defineProps(['product'])
     position: relative;
     cursor: pointer;
 }
+
 @media (max-width: 480px){
     .productImgContainer {
         height: 15rem;
-        width: 15rem;
+        /* width: 15rem; */
     }
 }
 

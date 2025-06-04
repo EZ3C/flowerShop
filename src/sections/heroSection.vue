@@ -25,6 +25,7 @@ import { motion } from 'motion-v';
             </div>
             <div class="btnContainer merriweather-sans">
             <MainBtn
+            href="products"
             :initial="{opacity:0, y: '50px'}"
             :animate="{opacity:1, y: 0, transition : { duration: 1, delay: 1.7}}">
                 Explore the Collection
@@ -38,7 +39,7 @@ import { motion } from 'motion-v';
 
 .heroSection {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
@@ -63,10 +64,25 @@ h2{
     font-size: 3rem;
 }
 
-    .btnContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 480px){
+    .headline {
+        width: 90%;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+
+    }
+
+}
 </style>
